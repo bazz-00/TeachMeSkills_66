@@ -8,6 +8,15 @@ for i in range(3):
     for j in range(3):
         print(s[i][j], end=' ')
     print()
+
+def draw():
+    count = 0
+    for i in range(3):
+        for j in range(3):
+            if s[i][j] != '-':
+                count += 1
+    return count == 9
+
 while True:
 
     if n % 2 != 0:
@@ -88,3 +97,8 @@ while True:
         elif s[2][0] == '0' and s[1][1] == '0' and s[0][2] == '0':
             print('0 win!')
             break
+    if draw() == True:
+        print('Draw')
+        break
+
+
