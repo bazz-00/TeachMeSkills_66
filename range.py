@@ -1,6 +1,6 @@
-def rover(n: list):
+def rover(n: list):   # create function
     mass = []
-    if len(n) == 1:
+    if len(n) == 1:       # if the user entered one value
         while n[0] != 0:
             n[0] = n[0] - 1
             mass.append(n[0])
@@ -21,7 +21,7 @@ def rover(n: list):
 
 
 
-n = list(map(int, input().split(',')))
+n = list(map(int, input().split(',')))   # function check
 for i in rover(n):
     print(i)
 
