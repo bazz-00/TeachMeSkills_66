@@ -1,9 +1,6 @@
-<<<<<<< HEAD
+
 menu = {1: 'display a list of tasks', 2: 'add task ', 3:'change task ',4: 'delete task', 5: 'quit'}
-=======
-menu = {1: 'display a list of tasks', 2: 'add task ', 3:'change task ',
-        4: 'delete task', 5: 'quit'}
->>>>>>> flomaster
+
 todo = {1: 'to wash the dishes', 2: 'go to the cinema',
         3: 'make the bed'}
 
