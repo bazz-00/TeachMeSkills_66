@@ -1,5 +1,6 @@
 menu = {1: 'display a list of tasks', 2: 'add task ', 3:'change task ',4: 'delete task', 5: 'quit'}
-todo = {1: 'to wash the dishes', 2: 'go to the cinema', 3: 'make the bed'}
+todo = {1: 'to wash the dishes', 2: 'go to the cinema',
+        3: 'make the bed'}
 
 def menu_display():
     print('           MENU')
