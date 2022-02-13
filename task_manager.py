@@ -1,4 +1,3 @@
-
 menu = {1: 'display a list of tasks', 2: 'add task ', 3:'change task ',
         4: 'delete task',5: 'execute', 6: 'completed', 7: 'unfulfilled',8: 'find', 0: 'quit' }
 
