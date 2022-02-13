@@ -60,7 +60,6 @@ def perform():
         todo[i-1] = '^^^'+todo[i-1]+'^^^'
     display()
 
-
 def delete_completed():
     x = input('do you want to delete completed tasks? (y/n)')
     if x == 'y':
