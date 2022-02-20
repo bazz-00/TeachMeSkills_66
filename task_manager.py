@@ -1,7 +1,8 @@
+
 menu = {1: 'display a list of tasks', 2: 'add task ', 3:'change task ',
         4: 'delete task',5: 'execute', 6: 'completed', 7: 'unfulfilled',8: 'find', 0: 'quit' }
-todo = ['помыть машину', 'сходить в магазин', 'убрать дома', 'посмотреть футбол']
-
+todo1 = open('todo', 'r+', encoding='utf-8')
+todo = list(map(str.strip, todo1.readlines()))
 def decor(func):
     def new():
         func()
@@ -21,6 +22,7 @@ def menu_display():
 
 def display():
     print('      task list')
+
     for i in range(len(todo)):
         print(i+1, todo[i])
 
@@ -92,18 +94,29 @@ def find():
             print(i+1, todo[i])
     print("to return to the main menu, press '9'")
 
+def exit_prog():
+    with open('todo', 'w', encoding='utf-8') as todo1:
+        for i in todo:
+            print(i, file=todo1)
+
 menu_display()
 while True:
+
+
     x = int(input())
     if x == 1:
         display()
     elif x == 2:
         add()
     elif x == 0:
+        exit_prog()
+        todo1.close()
         break
+
     elif x == 9:
         menu_display()
     elif x == 3:
+
         display()
         change()
     elif x == 4:
@@ -117,3 +130,8 @@ while True:
         unfulfilled()
     elif x == 8:
         find()
+
+        change()
+    elif x == 4:
+        delite()
+
